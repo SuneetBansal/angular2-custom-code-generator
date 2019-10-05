@@ -1,0 +1,24 @@
+{
+  "name": "@schematics/custom-g",
+  "version": "0.0.1",
+  "description": "custom code generator",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "build:watch": "tsc -p tsconfig.json --watch"
+  },
+  "keywords": [
+    "schematics"
+  ],
+  "author": "Suneet Bansal",
+  "schematics": "./src/collection.json",
+  "dependencies": {
+    "@angular-devkit/core": "^7.2.0",
+    "@angular-devkit/schematics": "^7.2.0",
+    "@angular-devkit/schematics-cli": "^0.800.0",
+    "@schematics/angular": "^7.0.0",
+    "@types/jasmine": "^3.0.0",
+    "@types/node": "^7.0.31",
+    "jasmine": "^3.0.0",
+    "typescript": "~3.2.2"
+  }
+}

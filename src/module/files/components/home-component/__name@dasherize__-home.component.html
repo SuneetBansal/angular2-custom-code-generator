@@ -1,0 +1,18 @@
+<dc-toolbar
+  [menuItems]="actionItems"
+  [activePage]="activePage"
+  [actionItems]="toolbarActionItems"
+  [activeField]="activeFieldDisplay | constantToName"
+  (sort)="sort($event)"
+  (action)="handleToolbarActions($event)"
+  (searchText)="searchText($event)">
+</dc-toolbar>
+<div class="dc-list-container">
+  <dc-expansion-list
+    [list]="filteredFiles"
+    (action)="handleFileActions($event)"
+    [isAsc]="isAsc"></dc-expansion-list>
+  <p class="no-record-found" *ngIf="!filteredFiles?.length">
+   {{"CommonModule.Messages.NoRecordFound" | translate}}
+  </p>
+</div>

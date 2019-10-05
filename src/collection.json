@@ -1,0 +1,40 @@
+{
+  "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "module": {
+      "description": "A blank schematic.",
+      "factory": "./module/index#module",
+      "schema": "./module/schema.json"
+    },
+    "module-with-reducer": {
+      "description": "A blank schematic.",
+      "factory": "./module-with-reducer/index#module",
+      "schema": "./module-with-reducer/schema.json"
+    },
+    "service": {
+      "description": "A blank schematic.",
+      "factory": "./service/index#service",
+      "schema": "./service/schema.json"
+    },
+    "sandbox": {
+      "description": "A blank schematic.",
+      "factory": "./sandbox/index#sandbox",
+      "schema": "./sandbox/schema.json"
+    },
+    "edit-component": {
+      "description": "A blank schematic.",
+      "factory": "./edit-component/index#component",
+      "schema": "./edit-component/schema.json"
+    },
+    "home-component": {
+      "description": "A blank schematic.",
+      "factory": "./home-component/index#container",
+      "schema": "./home-component/schema.json"
+    },
+    "reducer": {
+      "description": "A blank schematic.",
+      "factory": "./reducer/index#reducer",
+      "schema": "./reducer/schema.json"
+    }
+  }
+}

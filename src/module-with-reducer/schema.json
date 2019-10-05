@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/schema",
+    "id": "SchemanticsForMenu",
+    "title": "Service",
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string",
+        "$default": {
+          "$source": "argv",
+          "index": 0
+        }
+      },
+      "objectName": {
+        "type": "string",
+        "$default": {
+          "$source": "argv",
+          "index": 1
+        }
+      },
+      "introspectionFor": {
+        "type": "string",
+        "$default": {
+          "$source": "argv",
+          "index": 2
+        }
+      }
+    },
+    "required": ["name", "objectName", "introspectionFor"]
+  }
